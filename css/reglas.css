@@ -1,761 +1,738 @@
 #menu{
- width:16%;
- height:50%;
- float: left;
- border: 1px black solid;
- margin: 10px ;
-
+ width:17%; /* 17% ancho del menú */
+ height:50%; /* altura del menú*/
+ float: left; /* Flotar a la izquierda el menú*/
+ border: 3px #1F2021 solid; /* borde con un tamaño de 3px, un color plomo y su estilo solido*/
+ margin: 10px ; /*Espacio de 10px del borde*/
+ margin-left: 1%; /*Espacio de 1% del border principal, a la izquierda*/
+}
+#menu ul{/*Ubicación de los botones*/
+ list-style-type: none; /*Ningun tipo de marcador*/
+ margin-left:-30px;/*Espacio del menú a la izquierda*/
+ margin-right:20px;/*Espacio del menú a la derecha*/
+}
+#menu ul a{/* Estructura de los botones*/
+ display:block;/*Tipo del cuadro, en este caso cuadrado*/
+ background: #922b21;/*Fondo del menú con color rojo*/
+ margin-bottom:5px;/*5px espacio entre botones*/
+ padding:10px ;/*Espacio alrededor del contenido*/
+ border-radius:50px;/*Borde de los botones 50 pixeles*/
+ text-decoration:none;/*Quitar la decoración por defecto*/
+ color:white;/*Colof de las letras blanco*/
+ font:16px Verdana;/*Tipo de letra*/
 }
 
-#menu ul{
- list-style-type: none;
- margin-left:-30px;
- margin-right:20px;
-}
-#menu ul a{
- display:block;
- background:#42b883;
- margin-bottom:5px;
- padding:10px ;
- border-radius:50px;
- text-decoration:none;
- color:white;
- font:16px Verdana;
+#menu ul a:hover{/* Seleccionar botones, cambiar fondo*/
+ background: #e74c3c;/*Fondo de los botones*/
 }
 
-#menu ul a:hover{
- background:#3c4245;
+div#buttons{/*Forma del texto, del menú*/
+  text-align: center;/*Centrar texto*/
+  width: 100%/*anchura del texto*/
 }
 
-div#buttons{
-  text-align: center;
-  width: 100%
+input[type='submit']{/*Diseño del botón */
+  font-size: 1.2em;/*Tamano de las letras*/
+  padding: 5px;/*Espacio alrededor del contenido*/
+  margin: 15px;/*Espacio de 15px del borde*/
+  background: #922b21;/*Fondo del botón*/
+}
+label {/*Diseño de los label*/
+    color: #BDC3C7 ;/*Color de las letras, plomo*/
+    padding: 10px;/*Espacio alrededor del contenido**/
+    margin: 3px;/*Espacio de 3px del borde*/
 }
 
-input[type='submit']{
-  font-size: 1.2em;
-  padding: 5px;
-  margin: 15px;
-  background:#42b883;
+#label label{ /*Ubicación de los label*/
+ margin-left:-30px;/*Espacio del borde a la izquierda*/
+ margin-right:20px;/*Espacio del borde a la derecha**/
 }
-
-#label label{
- margin-left:-30px;
- margin-right:20px;
-}
-
-
 h1{
-  color: grey;
-  font-size:30px;
-  font-variant: small-caps;
-  text-shadow: #555 2px 2px 3px;
-  text-decoration: underline overline;
-  background-color: #42b883;
+  color: grey;/*Color de las letras, plomo*/
+  font-size:30px;/*Tamaño del tipo de letra 30 píxeles*/
+  text-align: center;/*Texto al medio*/
+  text-shadow: #555 2px 2px 3px;/*Agregar sombra al texto*/
+  text-decoration: underline overline;/*Decoración underline overlineh */
+  background-color: #922b21;/*Fondo con color rojo*/
 }
 h2{
-  color: #ff4d00;
-  font-size:30px;
-  font-style: italic;
-  text-shadow: #555 2px 2px 3px;
-  text-decoration-style: double;
-  text-decoration: underline wavy #ff4d00
+  color: #922b21;/*Color de las letras, rojo-negro*/
+  font-size:30px;/*Tamaño del tipo de letra 30 píxeles*/
+  font-style: italic;/*Estilo de letras italic*/
+  text-shadow: #555 2px 2px 3px;/**//*Agregar sombra al texto*/
+  text-decoration-style: double;/*Decoración con estilo double */
+  text-decoration: underline wavy#922b21 ;/*Fondo con color rojo-negro*/
 }
 h3{
-  color: #83142c;
-  font-size:30px;
-  font-family: inherit;
-  text-shadow: #555 2px 2px 3px;
-  text-decoration: none;
-  text-decoration: underline #83142c;
+  color: #e74c3c;/*Color de las letras, rojo*/
+  font-size:30px;/*Tamaño del tipo de letra 30 píxeles*/
+  font-family: inherit;/*Estilo de letras inherit*/
+  text-shadow: #555 2px 2px 3px;/*Agregar sombra al texto*/
+  text-decoration: underline #e74c3c;/*Decoración subrayada con color rojo*/
 }
 h4{
-  color: #9cf196;
-  font-size:30px;
-  font-family: fantasy;
-  text-shadow: #555 2px 2px 3px;
-  text-decoration: overline;
+  color: #b9770e;/*Color de las letras, gold*/
+  font-size:20px;/*Tamaño del tipo de letra 20 píxeles*/
+  font-family: fantasy;/*Estilo de letras fantasy*/
+  text-shadow: #555 2px 2px 3px;/*Agregar sombra al texto*/
+  text-decoration: overline;/*Decoración overline*/
 
 }
 h5{
-  color: #8105d8;
-  font-size:30px;
-  font-family: cursive;
-  text-shadow: #555 2px 2px 3px;
-  text-decoration: line-through;
+  color: #5B2C6F;/*Color de las letras, morado*/
+  font-size:30px; /*Tamaño del tipo de letra 30 píxeles*/
+  font-family: cursive; /*Estilo de letras cursive*/
+  text-shadow: #555 2px 2px 3px;/*Agregar sombra al texto*/
+  text-decoration: line-through;/*Decoración line-through */
 
 }
 h6{
-  color: #1089ff;
-  font-size:30px;
-  font-style: oblique;
-  text-shadow: #555 2px 2px 3px;
-  text-decoration-color: gold;
-
+  color: #1F618D;/*Color de las letras, azul*/
+  font-size:25px;/*Tamaño del tipo de letra 25 píxeles*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  text-shadow: #555 2px 2px 3px;/*Agregar sombra al texto*/
 }
 .imagen1{
-  font-style:italic;
-  font-weight:bold;
-  color: #293462;
-  font-family:'Helvetica','Verdana','Monaco',sans-serif;
-  text-align: center;
+  color: #909497;/*Color de las letras, plomo*/
+  font-size: 150%; /*Tamaño del tipo de letra 150%*/
+  text-align: center;/*Texto al medio*/
+  font-family:'Impact'; /*Estilo de letras Impact*/
 }
 .imagen2{
-  font-weight:bold;
-  color: #a64942;
-  font-family:'Monaco','Georgia','Times',serif;
-  text-align: center;
+  color: #909497;/*Color de las letras, plomo*/
+  font-size: 100%; /*Tamaño del tipo de letra 100%*/
+  text-align: center;/*Texto al medio*/
+  font-family:'Chalkduster'; /*Estilo de letras Chalkduster*/
 }
 .imagen3{
-  font-style:italic;
-  color: #fe5f55;
-  font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
-  text-align: center;
-}
-.imagen4{
-  font-weight:bold;
-  color: #b0f4e6;
-  font-family:'Georgia','Monaco',Arial,Verdana,sans-serif;
-  text-align: center;
+  color: #909497;/*Color de las letras, plomo*/
+  font-size: 110%; /*Tamaño del tipo de letra 110%*/
+  text-align: center;/*Texto al medio*/
+  font-family:'Marker Felt'; /*Estilo de letras Marker Felt*/
 }
 .imagen5{
-  display: block;
-  margin: auto;
-  border: 2px dashed blue;
+  display: block;  /*Tipo del cuadro, en este caso sea como un bloque*/
+  margin: auto; /* Espacio del cuadro, el navegador calcula el margen*/
+  border: 10px dashed  #b9770e; /*Tamaño el borde 10 pixeles, estilo del borde dashed y color del borde amarillo*/
 }
 .imagen6{
-  display: block;
-  margin: auto;
-  border:3px double blue;
+  display: block;  /*Tipo del cuadro, en este caso sea como un bloque*/
+  margin: auto; /* Espacio del cuadro, el navegador calcula el margen*/
+  border: 10px double #b9770e;/*Tamaño el borde 10 pixeles, estilo del borde doubley color del borde amarillo*/
 }
 .imagen7{
-  display: block;
-  margin: auto;
-  border:2px solid blue;
+  display: block;  /*Tipo del cuadro, en este caso sea como un bloque*/
+  margin: auto; /* Espacio del cuadro, el navegador calcula el margen*/
+  border: 10px solid #b9770e; /*Tamaño el borde 10 pixeles, estilo del borde solid y color del borde amarillo*/
 }
 .imagen8{
-  display: block;
-  margin: auto;
-  border: 10px dotted green;
+  display: block;  /*Tipo del cuadro, en este caso sea como un bloque*/
+  margin: auto; /* Espacio del cuadro, el navegador calcula el margen*/
+  border: 10px dotted green; /*Tamaño el borde 10 pixeles, estilo del borde dotted y color del borde verde*/
 }
 .imagen9{
-  display: block;
-  margin: auto;
-  border: 10px groove green;
+  display: block;  /*Tipo del cuadro, en este caso sea como un bloque*/
+  margin: auto; /* Espacio del cuadro, el navegador calcula el margen*/
+  border: 10px groove green;/*Tamaño el borde 10 pixeles, estilo del borde groove y color del borde verde*/
 }
 .imagen10{
-  display: block;
-  margin: auto;
-  border: 10px ridge green;
-  border-radius: 50px;
+  display: block;  /*Tipo del cuadro, en este caso sea como un bloque*/
+  margin: auto; /* Espacio del cuadro, el navegador calcula el margen*/
+  border: 10px ridge green;/*Tamaño el borde 10 pixeles, estilo del borde rigde y color del borde verde*/
+  border-radius: 50px;/*Borde de la imagen, 50 pixeles*/
 }
 .imagen11{
-  display: block;
-  margin: auto;
-  border: 10px inset green;
-  border-radius: 50px;
+  display: block;  /*Tipo del cuadro, en este caso sea como un bloque*/
+  margin: auto; /* Espacio del cuadro, el navegador calcula el margen*/
+  border: 10px inset green; /*Tamaño el borde 10 pixeles, estilo del borde inset y color del borde verde*/
+  border-radius: 50px;/*Borde de la imagen, 50 pixeles*/
 }
 .imagen12{
-  display: block;
-  margin: auto;
-  border-color: #226b80;
-  border-width: thick;
-  border-style: inset;
-  border-radius: 50px;
+  border-color: #226b80; /*Color del borde*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: inset;/*Establecer el estilo inset del font-family*/
+  border-radius: 50px;/*Borde de la imagen, 50 pixeles*/
 }
 .imagen13{
-  display: block;
-  margin: auto;
-  border-color: #226b80;
-  border-width: thick;
-  border-style: dotted;
-  border-radius: 50px;
+  border-color: #226b80;/*Color del borde*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: dotted;/*Establecer el estilo dotted del font-family*/
+  border-radius: 50px;/*Borde de la imagen, 50 pixeles*/
 }
 .imagen14{
-  display: block;
-  margin: auto;
-  border-color: #226b80;
-  border-width: thick;
-  border-style: double;
-  border-radius: 50px;
+  border-color: #226b80;/*Color del borde*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: double;/*Establecer el estilo double del font-family*/
+  border-radius: 50px;/*Borde de la imagen, 50 pixeles*/
 }
 .imagen15{
-  display: block;
-  margin: auto;
-  border-color: #fdd043;
-  border-width: thick;
-  border-style: ridge;
-  border-radius: 50px;
+  border-color: #fdd043; /*Color del borde*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: ridge;/*Establecer el estilo ridge del font-family*/
+  border-radius: 50px;/*Borde de la imagen, 50 pixeles*/
 }
 .imagen16{
-  display: block;
-  margin: auto;
-  border-color: #00b7a8;
-  border-width: thick;
-  border-style: dashed;
-  border-radius: 50px;
+  border-color: #00b7a8;/*Color del borde*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: dashed;/*Establecer el estilo dashed del font-family*/
+  border-radius: 50px;/*Borde de la imagen, 50 pixeles*/
 }
 .imagen17{
-  display: block;
-  margin: auto;
-  border-color: blue;
-  border-width: thick;
-  border-style: inset;
-  border-radius: 50px;
+  border-color: blue; /*Color del borde azul*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: inset;/*Establecer el estilo inset del font-family*/
+  border-radius: 50px;/*Borde de la imagen, 50 pixeles*/
 }
 .imagen18{
-  display: block;
-  margin: auto;
-  border-color: #aa7070;
-  border-width: thick;
-  border-style: inherit;
-  border-radius: 50px;
+  border-color: #aa7070;/*Color del borde*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: inherit;/*Establecer el estilo inherit del font-family*/
+  border-radius: 50px;/*Borde de la imagen, 50 pixeles*/
 }
 .imagen19{
-  display: block;
-  margin: auto;
-  border-color: #c70039;
-  border-width: thick;
-  border-style: inherit;
-  border-radius: 50px;
+  border-color: #c70039;/*Color del borde*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: inherit;/*Establecer el estilo inherite del font-family*/
+  border-radius: 50px;/*Borde de la imagen, 50 pixeles*/
 }
 .imagen20{
-  display: block;
-  margin: auto;
-  border-color: #c70039;
-  border-width: thick;
-  border-style: inset;
-  border-radius: 50px;
+  border-color: #c70039;/*Color del borde*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: inset;/*Establecer el estilo inset del font-family*/
+  border-radius: 50px;/*Borde de la imagen, 50 pixeles*/
 }
 .imagen21{
-  display: block;
-  margin: auto;
-  border-color: #c70039;
-  border-width: thick;
-  border-style: double;
-  border-radius: 50px;
+  border-color: #c70039;/*Color del borde*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: double;/*Establecer el estilo double del font-family*/
+  border-radius: 50px;/*Borde de la imagen, 50 pixeles*/
 }
 .imagen22{
-  color: #b0f4e6;
-  text-align: center;
-  font-size:20px;
-  font-family:Courier;
-  font-weight:bold;
-  font-style:italic;
-  line-height:30px;
-  letter-spacing:5px;
-  text-decoration:underline;
-  text-transform:capitalize;
-  text-align:left;
-  text-align: center;
+  color: #1A5276;/*Color de las letras #1A5276*/
+  text-align: center;/*Texto al medio*/
+  font-size:20px; /*Tamaño del tipo de letra 20 píxeles*/
+  font-family:'GulimChe'; /*Estilo de letras GulimChe*/
+  font-weight: bold; /*el grosor de las letras negrita*/
+  font-style: italic;/*Establecer el estilo italic del font-family*/
+  line-height:30px;/*Altura de una casilla remarcada por líneas con 30 pixeles*/
+  letter-spacing:5px; /*espacio entre caracteres con 5 pixeles*/
 }
 .imagen23{
-  color: #b0f4e1;
-  text-align: center;
-  font-size:20px;
-  font-family:Courier;
-  font-weight:bold;
-  font-style: oblique;
-  line-height:30px;
-  letter-spacing:5px;
-  text-align:left;
-  text-align: center;
+  color: #1A5276;/*Color del texto plomo*/
+  text-align: center;/*Texto al medio*/
+  font-size:20px; /*Tamaño del tipo de letra 20 píxeles*/
+  font-family:'Gungsuh';/*Estilo de letras Gungsuh*/
+  font-weight:bold;/*el grosor de las letras negrita*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  line-height:30px;/*Altura de una casilla remarcada por líneas con 30 pixeles*/
+  letter-spacing:5px;/*espacio entre caracteres con 5 pixeles*/
 }
 .imagen24{
-  color: #b0f4e9;
-  text-align: center;
-  font-size:20px;
-  font-family:Courier;
-  font-weight:bold;
-  line-height:30px;
-  letter-spacing:5px;
-  text-decoration:underline;
-  text-align:left;
-  text-indent:30px;
-  text-align: center;
+  color: #1A5276;/*Color del texto plomo*/
+  text-align: center;/*Texto al medio*/
+  font-size:14px; /*Tamaño del tipo de letra 14 píxeles*/
+  font-family:'GungsuhChe';/*Estilo de letras GungsuhChe*/
+  font-weight:bold;/*el grosor de las letras negrita*/
+  line-height:30px;/*Altura de una casilla remarcada por líneas con 30 pixeles*/
+  letter-spacing:5px;/*espacio entre caracteres con 5 pixeles*/
+  text-indent:30px;/*anchura del texto 20 pixeles*/
 }
 .imagen25{
-  color: #b0f5e9;
-  text-align: center;
-  font-size:20px;
-  font-family:Courier;
-  font-weight:bold;
-  line-height:30px;
-  letter-spacing:5px;
-  text-align:left;
-  text-indent:30px;
-  text-align: center;
+  color: #1A5276;/*Color del texto plomo*/
+  text-align: center;/*Texto al medio*/
+  font-size:20px; /*Tamaño del tipo de letra 20 píxeles*/
+  font-family:'Hebrew';/*Estilo de letras Hebrew*/
+  line-height:30px;/*Altura de una casilla remarcada por líneas con 30 pixeles*/
+  letter-spacing:5px;/*espacio entre caracteres con 5 pixeles*/
+  text-indent:30px;/*anchura del texto 20 pixeles*/
 }
 .imagen26{
-  font-style: oblique;
-  font-weight:bold;
-  color: #0c907d;
-  font-family:'Helvetica','Verdana','Monaco',sans-serif;
-  text-align: center;
+  color: #797D7F;/*Color del texto plomo*/
+  font-family:'Luminari'; /*Estilo de letras Luminari*/
+  text-align: center;/*Texto al medio*/
 }
 .imagen27{
-  font-weight:bold;
-  font-style: italic;
-  color: #f9ad8d;
-  font-family:'Helvetica','Georgia','Times',serif;
-  text-align: center;
+  color: #797D7F;/*Color del texto plomo*/
+  font-family:'Malgun Gothic';/*Estilo de letras Malgun Gothic*/
+  text-align: center;/*Texto al medio*/
 }
 .imagen28{
-  font-style:italic;
-  color: #cca2e1;
-  font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
-  text-align: center;
+  color: #797D7F;/*Color del texto plomo*/
+  font-family: 'Monaco';/*Estilo de letras Monaco*/
+  text-align: center;/*Texto al medio*/
 }
 .imagen29{
-  font-weight:bold;
-  color: #ffb480;
-  font-family:'Georgia','Monaco',Arial,Verdana,sans-serif;
-  text-align: center;
+  color: #BFC9CA;/*Color del texto blanco*/
+  font-style: italic;/*Establecer el estilo italic del font-family*/
+  font-family:'Georgia','Monaco',Arial,Verdana,sans-serif; /*Estilo de letras Georgia,Monaco,Arial,Verdana,sans-serif*/
+  text-align: center;/*Texto al medio*/
 }
 .imagen30{
-  font-weight:bold;
-  font-style: oblique;
-  color: #ffcd3c;
-  font-family:'Times','Verdana',Arial,Verdana,sans-serif;
-  text-align: center;
+  color: #BFC9CA;/*Color del texto blanco*/
+  font-weight: bold;/*el grosor de las letras negrita*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  font-family:'Times','Verdana',Arial,Verdana,sans-serif;/*Estilo de letras Times, Verdana, Arial, Verdana, sans-serif*/
+  text-align: center;/*Texto al medio*/
 }
 .imagen31{
-  font-weight:bold;
-  font-style: italic;
-  color: #53cde2;
-  font-family:'Georgia','Times',Arial,Verdana,sans-serif;
-  text-align: center;
+  color: #BFC9CA;/*Color del texto blanco*/
+  font-weight: bold;/*el grosor de las letras negrita*/
+  font-style: italic;/*Establecer el estilo italic del font-family*/
+  font-family:'Georgia','Times',Arial,Verdana,sans-serif;/*Estilo de letras Georgia, Times, Arial, Verdana, sans-serif*/
+  text-align: center;/*Texto al medio*/
 }
 .imagen32{
-  font-weight:bold;
-  font-style: italic;
-  color: #9a1ba0;
-  font-family:'Helvetica','Times',Arial,Verdana,sans-serif;
-  text-align: center;
+  color: #EAEDED;/*Color del texto blanco*/
+  font-weight: bold;/*el grosor de las letras negrita*/
+  font-style: italic;/*Establecer el estilo italic del font-family*/
+  font-family:'Helvetica','Brush Script Std',Arial,Verdana,sans-serif;/*Estilo de letras Helvetica,Brus Script Std,Arial, Verdana, sans-serif*/
+  text-align: center;/*Texto al medio*/
 }
 .imagen33{
-  font-weight:bold;
-  font-style: italic;
-  color: #882042;
-  font-family:'Helvetica','Helvetica',Arial,Verdana,sans-serif;
-  text-align: center;
+  color: #EAEDED;/*Color del texto blanco*/
+  font-weight: bold;/*el grosor de las letras negrita*/
+  font-style: italic;/*Establecer el estilo italic del font-family*/
+  font-family:'Baskerville','Comic Sans MS',Arial,Verdana,sans-serif;/*Estilo de letras Georgia, Monaco, Arial, Verdana, sans-serif*/
+  text-align: center;/*Texto al medio*/
 }
 .imagen34{
-  font-weight:bold;
-  font-style: italic;
-  color: #3e432e;
-  font-family:'Georgia','Helvetica',Arial,Verdana,sans-serif;
-  text-align: center;
+  color: #EAEDED;/*Color del texto blanco*/
+  font-weight: bold;/*el grosor de las letras negrita*/
+  font-style: italic;/*Establecer el estilo italic del font-family*/
+  font-family:'Georgia','Helvetica',Arial,Verdana,sans-serif;/*Estilo de letras Georgia, Georgia, Helvetica, Verdana, sans-serif*/
+  text-align: center;/*Texto al medio*/
 }
 .imagen35{
-  font-weight:bold;
-  font-style: italic;
-  color: #ff2400;
-  font-family:'Helvetica','Times',Arial,Verdana,sans-serif;
-  text-align: center;
+  color: #EAEDED;/*Color del texto blanco*/
+  font-weight: bold;/*el grosor de las letras negrita*/
+  font-style: italic;/*Establecer el estilo italic del font-family*/
+  font-family:'Helvetica','Chalkduster',Arial,Verdana,sans-serif;/*Estilo de letras Helvetica, Chalkduster, Arial, Verdana, sans-serif*/
+  text-align: center;/*Texto al medio*/
 }
 .imagen36{
-  color: #7b3c3c;
-  text-align: center;
+  color: gray;/*Color del texto plomo*/
+  font-variant: small-caps;/*tipo de letra */
+  text-shadow: #555 2px 2px 3px;/*sombra al texto*/
+  text-align: center;/*Texto al medio*/
 }
 
 .imagen37{
-  font-weight:bold;
-  color: #851de0;
-  font-family:'Times','Verdana',Arial,Verdana,sans-serif;
-  border-width:2px;
-   border-color:blue;
-   border-style:solid;
+  color: white;/*Color del texto blanco*/
+  font-size: 150%; /*Tamaño del tipo de letra 150% */
+  text-align: center;/*Texto al medio*/
+  font-family:'Brush Script MT'; /*Estilo de letras Brush Script MT*/
+  border-width:2px; /*La anchura del borde, 2 pixeles*/
+  border-color:gray;/*Color del borde gris*/
+  border-style:solid;/*Estilo del borde solid*/
 }
 .imagen38{
-  font-weight:bold;
-  font-style: oblique;
-  color: #aa26da;
-  font-family:'Georgia','Times',Arial,Verdana,sans-serif;
-  text-align: center;
-  border-width:7px;
-   border-color:green;
-   border-style: inset;
+  color: white;/*Color del texto blanco*/
+  font-size: 120%;/*Tamaño del tipo de letra 120% */
+  text-align: center;/*Texto al medio*/
+  font-family:'Bradley Hand';/*Estilo de letras Bradley Hand*/
+  border-width:7px; /*La anchura del borde, 7 pixeles*/
+  border-color:gray;/*Color del borde gris*/
+  border-style: inset;/*Estilo del borde inset*/
 }
 .imagen39{
-  font-weight:bold;
-  font-style: italic;
-  color: #c355f5;
-  font-family:'Helvetica','Times',Arial,Verdana,sans-serif;
-  text-align: right;
-  border-width:8px;
-  border-color:black;
-  border-style: dashed;
+  color: white;/*Color del texto blanco*/
+  font-size: 120%; /*Tamaño del tipo de letra 120% */
+  text-align: center;/*Texto al medio*/
+  font-family: fantasy;/*Estilo de letras fantasy*/
+  border-width:8px;/*La anchura del borde, 8 pixeles*/
+  border-color:gray;/*Color del borde gris*/
+  border-style: dashed;/*Estilo del borde dashed*/
+
 }
 .imagen40{
-  font-weight:bold;
-  color: #f1fa3c;
-  font-family:'Helvetica','Helvetica',Arial,Verdana,sans-serif;
-  text-align: center;
-  border-radius: 50px;
+  color: white;/*Color del texto blanco*/
+  font-size: 100%; /*Tamaño del tipo de letra 100% */
+  font-family: emoji; /*Estilo de letras emoji*/
+  text-align: left;/*Texto a la izquierda*/
+  border-style: dashed;/*Estilo del borde dashed*/
+  border-color: gray;/*Color del borde gris*/
+  border-radius: 10px;/*Borde de la imagen, 10 pixeles*/
 }
 .imagen41{
-  font-weight:bold;
-  font-style: italic;
-  color: #ffe7d1;
-  font-family:'Georgia','Helvetica',Arial,Verdana,sans-serif;
-  border-radius: 50px;
-  border-style: double;
+  color: white;/*Color del texto blanco*/
+  font-size: 100%;/*Tamaño del tipo de letra 100% */
+  font-weight: bold;/*el grosor de las letras negrita*/
+  font-style: italic;/*Estilo de letras italic*/
+  text-align: left;/*Texto a la izquierda*/
+  font-family:'FreesiaUPC';/*Estilo de letras FreesiaUPC*/
+  border-radius: 10px;/*Borde de la imagen, 10 pixeles*/
+  border-color: gray;/*Color del borde gris*/
+  border-style: double;/*Estilo del borde double*/
 }
 .imagen42{
-  font-weight:bold;
-  font-style: oblique;
-  color: #f6c89f;
-  font-family:'Helvetica','Times',Arial,Verdana,sans-serif;
-  text-align: center;
-  border-radius: 50px;
-  border-style: groove;
+  color: white;/*Color del texto blanco*/
+  font-size: 100%;/*Tamaño del tipo de letra 100% */
+  font-family:'Futara'; /*Estilo de letras Futura*/
+  text-align: left;/*Texto a la izquierda*/
+  border-radius: 10px; /*Borde de la imagen, 10 pixeles*/
+  border-color: gray;/*Color del borde gris*/
+  border-style: groove;/*Estilo del borde groove*/
 }
 .imagen43{
-  font-weight:bold;
-  color: #0c093c;
-  font-family:'Helvetica','Helvetica',Arial,Verdana,sans-serif;
-  text-align: center;
-  border-radius: 50px;
+  color: white;/*Color del texto blanco*/
+  font-size: 100%;/*Tamaño del tipo de letra 100% */
+  font-family:'Gabriola';/*Estilo de letras Gabriola*/
+  text-align: left;/*Texto a la izquierda*/
+  border-color: gray;/*Color del borde gris*/
+  border-style: dotted;/*Estilo del borde dotted*/
 }
 .imagen44{
-  font-weight:bold;
-  font-style: italic;
-  color: #df42d1;
-  font-family:'Georgia','Helvetica',Arial,Verdana,sans-serif;
-  border-radius: 50px;
-  border-style: double;
+  color: white;/*Color del texto blanco*/
+  font-size: 100%;/*Tamaño del tipo de letra 100% */
+  font-weight:bold;/*el grosor de las letras negrita*/
+  font-style: italic;/*Establecer el estilo italic del font-family*/
+  font-family:'Gill Sans';/*Estilo de letras Gill Sans*/
+  text-align: left;/*Texto a la izquierda*/
+  border-color: gray;/*Color del borde gris*/
+  border-style: double;/*Estilo del borde double*/
 }
 .imagen45{
-  font-weight:bold;
-  font-style: oblique;
-  color: #eea5f6;
-  font-family:'Helvetica','Times',Arial,Verdana,sans-serif;
-  text-align: center;
-  border-radius: 50px;
-  border-style: groove;
+  color: white;/*Color del texto blanco*/
+  font-size: 100%;/*Tamaño del tipo de letra 100% */
+  font-family:'Gulim';/*Estilo de letras Gulim*/
+  text-align: right;/*Texto a la derecha*/
+  border-style: groove;/*Estilo del borde groove*/
 }
 .imagen46{
-  font-weight:bold;
-  font-style: italic;
-  color: #6807f9;
-  font-family:'Helvetica','Times',Arial,Verdana,sans-serif;
-  text-align: center;
+  color: white;/*Color del texto blanco*/
+  font-size: 100%;/*Tamaño del tipo de letra 100% */
+  font-style: italic;/*Establecer el estilo italic del font-family*/
+  font-family:'KodchiangUPC';/*Estilo de letras KodchiangUPC*/
+  text-align: right;/*Texto a la derecha*/
 }
 .imagen47{
-  font-weight:bold;
-  font-style: italic;
-  color: #9852f9;
-  font-family: inherit;
-  text-align: left;
+  color: white;/*Color del texto blanco*/
+  font-size: 100%;/*Tamaño del tipo de letra 100% */
+  font-style: italic;/*Establecer el estilo italic del font-family*/
+  font-family: 'Kokila';/*Estilo de letras Kokila*/
+  text-align: right;/*Texto a la derecha*/
 }
 .imagen48{
-  font-weight:bold;
-  font-style: italic;
-  color: #c299fc;
-  font-family: sans-serif;
-  text-align: right;
+  color: white;/*Color del texto blanco*/
+  font-size: 100%;/*Tamaño del tipo de letra 100% */
+  font-style: italic;/*Establecer el estilo italic del font-family*/
+  font-family: 'Plantagenet Cherokee'; /*Estilo de letras Plantagenet Cherokee*/
+  text-align: right;/*Texto a la  derecha*/
 }
 
 .imagen49{
-  display: block;
-  margin: auto;
-  text-decoration: underline overline wavy blue;
-  border-color: #003f5c;
-  border-style: double;
-  border-radius: 50px;
+  color: white;/*Color del texto blanco*/
+  font-size: 100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Raavi';/*Estilo de letras Raavi*/
+  text-decoration: underline overline wavy #B3B6B7;
+  letter-spacing: 5px;/*Espacio entre letras con 5 pixeles*/
+  border-color: #515A5A;/*Color del borde gris*/
+  border-style: double;/*Estilo del borde double*/
 }
 .imagen50{
-  color: #58508d;
-  text-align: center;
-  font-size:20px;
-  font-family:Courier;
-  font-weight:bold;
-  font-style:italic;
-  line-height:30px;
-  letter-spacing:5px;
-  text-decoration:underline;
-  text-transform:capitalize;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family:'Rockwell';/*Estilo de letras  Rockwell*/
+  font-style:italic;/*Establecer el estilo italic del font-family*/
+  letter-spacing:5px;/*Espacio entre letras con 5 pixeles*/
+  border-color: #515A5A;/*Color del borde gris*/
+  border-style: dotted;/*Estilo del borde dotted*/
 }
 .imagen51{
-  color: #bc5090;
-  text-align: center;
-  font-size:20px;
-  font-family:Courier;
-  font-weight:bold;
-  font-style: oblique;
-  text-align:left;
-  text-align: center;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Rockwell Extra Bold'; /*Estilo de letras Rockwell Extra Bold*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  text-align: center;/*Texto al medio*/
 }
 
 .imagen52{
-  display: block;
-  margin: auto;
-  text-decoration: line-through;
-  border-color: #ac8daf;
-  border-width: thick;
-  border-style: dashed;
-  border-radius: 50px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Rockwell Nova Cond';/*Estilo de letras Rockwell Nova Cond*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  text-align: right;/*Texto a la derecha*/
+  border-color: #909497 ;/*Color del borde gris*/
+  border-width: thick; /*La anchura del borde, grueso*/
+  border-style: dashed;/*Estilo del borde dashed*/
 }
 .imagen53{
-  display: block;
-  margin: auto;
-  text-decoration: underline;
-  border-color: #7c0a02;
-  border-width: thick;
-  border-style: inset;
-  border-radius: 50px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Rockwell Nova Extra Bold';/*Estilo de letras Rockwell Nova Extra bol*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  text-align: right;/*Texto a la derecha*/
+  border-color: #909497;/*Color del borde gris*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: inset;/*Estilo del borde inset*/
 }
 .imagen54{
-  display: block;
-  margin: auto;
-  text-decoration: overline;
-  border-color: #5d1451;
-  border-width: thick;
-  border-style: inherit;
-  border-radius: 50px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Sakkal Majalla';/*Estilo de letras Sakkal Majalla*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  text-align: right;/*Texto a la derecha*/
+  border-color: #909497;/*Color del borde gris*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: double;/*Estilo del borde double*/
 }
 .imagen55{
-  display: block;
-  margin: auto;
-  text-decoration: line-through;
-  border-color: #6a1051;
-  border-width: thick;
-  border-style: inherit;
-  border-radius: 10px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Segoe UI Emoji'; /*Estilo de letras Segoe UI Emoji*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  text-align: right;/*Texto a la derecha*/
+  border-color: #909497;/*Color del borde gris*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: dashed;/*Estilo del borde dashed*/
 }
 .imagen56{
-  display: block;
-  margin: auto;
-  border-color: #c9d99e;
-  border-width: thick;
-  border-style: inset;
-  border-radius: 50px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Segoe UI Emoji','Tahoma',Arial,Verdana,sans-serif; /*Estilo de letras Segoe UI Emoji, Tahoma, Arial, Verdana, sans-serif*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  border-color: #ECF0F1;/*Color del borde gris*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: inset;/*Estilo del borde inset*/
 }
 .imagen57{
-  display: block;
-  margin: auto;
-  border-color: #233567;
-  border-width: thick;
-  border-style: dotted;
-  border-radius: 20px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'UD Digi Kyokasho','Tahoma',Arial,Verdana,sans-serif;/*Estilo de letras UD Digi Kyokasho, Tahoma, Arial, Verdana, sans-serif*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  border-color: #ECF0F1;/*Color del borde gris*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: dotted;/*Estilo del borde dotted*/
 }
 .imagen58{
-  display: block;
-  margin: auto;
-  border-color: #347474;
-  border-width: thick;
-  border-style: double;
-  border-radius: 30px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Vani','Tahoma',Arial,Verdana,sans-serif;/*Estilo de letras Vani, Tahoma, Arial, Verdana, sans-serif*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  border-color: #ECF0F1;/*Color del borde gris*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: double;/*Estilo del borde double*/
 }
 .imagen59{
-  display: block;
-  margin: auto;
-  border-color: #42b883;
-  border-width: thick;
-  border-style: ridge;
-  border-radius: 40px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Vrinda','Tahoma',Arial,Verdana,sans-serif;/*Estilo de letras Vrinda, Tahoma, Arial, Verdana, sans-serif*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  border-color: #ECF0F1;/*Color del borde gris*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: ridge;/*Estilo del borde ridge*/
 }
 .imagen60{
-  display: block;
-  margin: auto;
-  border-color: #ffbbcc;
-  border-width: thick;
-  border-radius: 50px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Webdings','Luminari',Arial,Verdana,sans-serif;/*Estilo de letras Webdings, Luminari, Arial, Verdana, sans-serif*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  border-color: #ECF0F1;/*Color del borde gris*/
+  border-width: thick;/*La anchura del borde, grueso*/
 }
 .imagen61{
-  display: block;
-  margin: auto;
-  border-color: #ffcccc;
-  border-style: dotted;
-  border-radius: 20px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Wingdings','Marker Felt',Arial,Verdana,sans-serif;/*Estilo de letras Wingdings, Marker Felt, Arial, Verdana, sans-serif*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  border-color: #ECF0F1;/*Color del borde gris*/
+  border-style: dotted;/*Estilo del borde dotted*/
 }
 .imagen62{
-  display: block;
-  margin: auto;
-  border-color: #ffddcc;
-  border-width: thick;
-  border-style: double;
-  border-radius: 30px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Yu Gothic','Monaco',Arial,Verdana,sans-serif;/*Estilo de letras Yu Gothic, Monaco, Arial, Verdana, sans-serif*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  border-color: #ECF0F1;/*Color del borde gris*/
+  border-width: thick;/*La anchura del borde, grueso*/
+  border-style: double;/*Estilo del borde double*/
 }
 .imagen63{
-  display: block;
-  margin: auto;
-  border-color: #ffddcc;
-  border-style: ridge;
-  border-radius: 40px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Zapf Chancery','papyrus',Arial,Verdana,sans-serif;/*Estilo de letras Zapf Chancery, papyrus, Arial, Verdana, sans-serif*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  border-color: #ECF0F1;/*Color del borde gris*/
+  border-style: ridge;/*Estilo del borde rigde*/
 }
 .imagen64{
-  display: block;
-  margin: auto;
-  font-family: 'Times New Roman', Times, serif; font-size: 1.6em;
-  font-weight: bold;
-  border-radius: 40px;
+  color: white;/*Color del texto blanco*/
+  font-size: 120%;/*Tamaño del tipo de letra 120% */
+  text-align: center;/*Texto al medio*/
+  font-family: 'Apple Chancery';/*Estilo de letras Apple Chancery*/
+  border-width:8px;
+  border-color:gray;/*Color del borde gris*/
+  border-style: ridge;/*Estilo del borde rigde*/
 }
 .imagen65{
-  display: block;
-  margin: auto;
-  text-decoration: underline overline wavy #23374d;
-  border-color: #23374d;
-  border-style: double;
-  border-radius: 50px;
-  margin-bottom: 5px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Shruti';/*Estilo de letras Shruti*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  text-align: center;/*Texto al medio*/
+  text-decoration: underline overline wavy #979A9A; /*Decorar el texto con underline y color gris*/
+  border-color: #909497;/*Color del borde gris*/
+  border-style: double;/*Estilo del borde double*/
 }
 .imagen66{
-  display: block;
-  text-decoration:
-  margin: auto;
-  text-decoration: overline overline wavy #1089ff;
-  border-color: #1089ff;
-  border-style: double;
-  border-radius: 50px;
-  margin-bottom: 10px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'SimHei';/*Estilo de letras SimHei*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  text-align: center;/*Texto al medio*/
+  text-decoration: line-through overline wavy #979A9A;/*Decorar el texto con line-through y color gris*/
+  border-color: #909497;/*Color del borde gris*/
+  border-style: dashed;/*Estilo del borde dashed*/
 }
 .imagen67{
-  display: block;
-  margin: auto;
-  text-decoration: line-through overline wavy #3b064d;
-  border-color: #3b064d;
-  border-style: double;
-  border-radius: 50px;
-  margin-bottom: 10px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'SimKai';/*Estilo de letras SimKai*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  text-align: center;/*Texto al medio*/
+  text-decoration: line-through overline wavy #979A9A;/*Decorar el texto con line-through y color gris*/
+  border-color: #909497;/*Color del borde gris*/
+  border-style: dotted;/*Estilo del borde dotted*/
 }
 .imagen68{
-  display: block;
-  margin: auto;
-  text-decoration: inherit overline wavy #01d28e;
-  border-color: #01d28e;
-  border-style: dashed;
-  border-radius: 50px;
-  margin-bottom: 10px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Simplified Arabic';/*Estilo de letras Simplified Arabic*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  text-align: center;/*Texto al medio*/
+  text-decoration: underline overline wavy #979A9A;/*Decorar el texto con underline y color gris*/
+  border-color: #909497;/*Color del borde gris*/
+  border-style: ridge;/*Estilo del borde rigde*/
 }
 .imagen69{
-  display: block;
-  margin: auto;
-  text-decoration-color: red;
-  text-decoration: underline overline wavy #730068;
-  border-color: #730068;
-  border-style: double;
-  border-radius: 50px;
-  margin-bottom: 5px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Simplified Chinese'; /*Estilo de letras Simplified Chinese*/
+  font-style: oblique;/*Establecer el estilo oblique del font-family*/
+  text-align: center;/*Texto al medio*/
+  text-decoration: underline overline wavy #979A9A;/*Decorar el texto underline y color gris*/
+  border-color: #909497;/*Color del borde gris*/
+  border-style: solid;/*Estilo del borde solid*/
+  border-radius: 10px;
 }
 .imagen70{
-  display: block;
-  margin: auto;
-  text-decoration-color: red;
-  text-decoration: underline overline dotted #730068;
-  border-color: #730068;
-  border-style: double;
-  border-radius: 50px;
-  margin-bottom: 5px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'SimSun';/*Estilo de letras SimSun*/
+  text-align: center;/*Texto al medio*/
+  text-decoration: underline overline dotted #979A9A;/*Decorar el texto underline y color gris*/
+  border-color: #909497;/*Color del borde gris*/
+  border-style: double;/*Estilo del borde double*/
 }
 .imagen71{
-  display: block;
-  margin: auto;
-  text-decoration: overline;
-  text-decoration: inherit overline dotted #230338;
-  border-color: #230338;
-  border-style: double;
-  border-radius: 50px;
-  margin-bottom: 5px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'SimSun-ExtB';/*Estilo de letras SimSun-ExtB*/
+  text-align: center;/*Texto al medio*/
+  text-decoration: underline overline dotted #979A9A;/*Decorar el texto underline y color gris*/
+  border-color: #909497;/*Color del borde gris*/
+  border-style: dashed;/*Estilo del borde dashed*/
 }
 .imagen72{
-  display: block;
-  margin: auto;
-  text-decoration: line-through overline dotted #730068;
-  border-color: #730068;
-  border-style: double;
-  border-radius: 50px;
-  margin-bottom: 5px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Symbol';/*Estilo de letras Symbol*/
+  text-align: center;/*Texto al medio*/
+  text-decoration: line-through overline dotted #979A9A;/*Decorar el texto line-through y color gris*/
+  border-color: #909497;/*Color del borde gris*/
+  border-style: dotted;/*Estilo del borde dotted*/
 }
 .imagen73{
-  display: block;
-  margin: auto;
-  text-decoration: underline overline dotted #f2a6a6;
-  border-color: #f2a6a6;
-  border-style: double;
-  text-align: center;
-  border-radius: 50px;
-  margin-bottom: 5px;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Sylfaen';/*Estilo de letras Sylfaen*/
+  text-align: center;/*Texto al medio*/
+  text-decoration: underline overline dotted #979A9A;/*Decorar el texto underline y color gris*/
+  border-color: #909497;/*Color del borde gris*/
+  border-style: groove;/*Estilo del borde groove*/
 }
 .imagen74{
-  display: block;
-  margin: auto;
-  text-decoration: underline overline dotted #ddf796;
-  border-color: #ddf796;
-  border-style: dashed;
-  text-align: center;
+  color: white;/*Color del texto blanco*/
+  font-size:100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Traditional Arabic';/*Estilo de letras Traditional Arabic*/
+  text-align: center;/*Texto al medio*/
+  text-decoration: underline overline dotted #979A9A;/*Decorar el texto underline y color gris*/
+  border-color: #909497;/*Color del borde gris*/
+  border-style: dashed;/*Estilo del borde dashed*/
 }
 .imagen75{
-  display: block;
-  margin: auto;
-  text-indent: 50px;
-  text-decoration: underline overline dotted #584b42;
-  border-color: #584b42;
-  border-style: dotted;
-  text-align: center;
+  color: white;/*Color del texto blanco*/
+  font-size: 100%;/*Tamaño del tipo de letra 100% */
+  font-family: 'Tahoma';/*Estilo de letras Tahoma*/
+  text-decoration: underline overline dotted #584b42;/*Decorar el texto underline y color gris*/
+  border-color: #584b42;/*Color del borde gris*/
+  border-style: dotted;/*Estilo del borde dotted*/
+  text-align: center;/*Texto al medio*/
 }
 .imagen76{
-  display: block;
-  margin: auto;
-  text-indent: 30px;
-  color: gold;
-  text-decoration: underline overline dotted #eb7070;
-  border-color: #eb7070;
-  border-style: dotted;
-  text-align: center;
+  color: white;/*Color del texto blanco*/
+  font-size: 100%;/*Tamaño del tipo de letra 100% */
+  font-style: italic;/*Establecer el estilo italic del font-family*/
+  font-family: 'Trattatello';/*Estilo de letras Trattatello*/
+  text-align: right;/*Texto al a derecha*/
+  text-decoration: underline overline dotted #909497 ;/*Decorar el texto underline y color gris*/
+  border-color: #424949;/*Color del borde gris*/
+  border-style: dotted;/*Estilo del borde dotted*/
 }
 .imagen77{
-  display: block;
-  margin: auto;
-  text-indent: 30px;
-  color: green;
-  text-decoration: underline overline dotted #032535;
-  border-color: #032535;
-  border-style: double;
-  text-align: center;
+  color: white;/*Color del texto blanco*/
+  font-family: 'Arial Rounded MT Bold'; /*Estilo de letras Ariel Rounded MT Bold*/
+  text-decoration: underline overline dotted #032535;/*Decorar el texto underline y color gris*/
+  border-color: #E5E7E9;/*Color del borde gris*/
+  border-style: double;/*Estilo del borde double*/
+  text-align: center;/*Texto al medio*/
 }
 .imagen78{
-  display: block;
-  margin: auto;
-  color: #ffdd67;
-  text-decoration: underline overline dotted #ffb997;
-  border-color: #ffb997;
-  border-style: inherit;
-  text-align: center;
+  color: white;/*Color del texto blanco*/
+  font-family: 'Hoefler Text';/*Estilo de letras Hoefler text*/
+  border-color: #515A5A;/*Color del borde gris*/
+  border-style: inherit;/*Establecer el estilo inherit del font-family*/
+  text-align: center;/*Texto al medio*/
 }
 .imagen79{
-  display: block;
-  margin: auto;
-  color: #cf455c;
-  text-decoration: underline overline dotted #08ffc8;
-  border-color: #08ffc8;
-  text-align: center;
-}
-html {
-background-color: #bcbab8;
-}
-
-html body header:hover{
-
- background:#3c4245;
+  color: white;/*Color del texto blanco*/
+  font-family: 'papyrus';/*Estilo de letras papyrus*/
+  border-color: #08ffc8;/*Color del borde gris*/
+  text-align: center;/*Texto al medio*/
 }
 html body div:hover{
- background:#ffff9d;
+ background: #1F2021;/*Fondo del menú color rojo*/
 }
-
+html body header:hover{
+ background: #e74c3c;/*Fondo del header color rojo-negro*/
+}
 html body aside:hover{
- background:#9d8f8f;
+ background: #1F2021;/*Fondo del aside color gris-negro*/
 }
 html body footer:hover{
- background:#9d8f8f;
+ background: #922b21;/*Fondo del footer color rojo*/
 }
 aside section p:hover{
- background:#ffff9d;
+ background: #626567 ;/*Fondo de p dentro de la section color griss*/
 }
 body aside form :hover{
- background:#9d8f8f;
+ background: #e74c3c;/*Fondo del header form dentro del aside rojo-negro*/
+}
+html {
+background-color: black;/*Fondo de todo la pagina html con color negro*/
 }
 body aside img:hover{
- background:#ffff9d;
+ background: #e74c3c;/*Fondo del img dentro del aside color rojo-negro*/
+}
+header {
+  animation-duration: 3s; /* Duración de la animación*/
+  animation-name: slidein;/*Llamar al estilo slidein*/
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 10%;/* Comenzar la animación  desde la derecha*/
+    width: 20%/*anchura del elemento con porcentaje*/
+  }
+
 }
