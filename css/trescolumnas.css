@@ -5,69 +5,32 @@ Author:   Fernando Sánchez
 Date: 19/10/2019
 Filename: style2.css
 -->*/
-.otro{
-  border: 1px black solid;
-  padding: 10px;
-  margin: 10px;
+
+body{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1080px;
+  max-height: 640px;
 }
-
-
-
+.otro{
+  border: 3px #1F2021 solid;
+  padding: 1%;
+  margin: 1%;
+}
 .contenido{
-  width: 60%;
-  /*position: absolute;
-  top: 10px;
-  left: 50px;*/
-  border: 1px black solid;
+  width: 55%;
+  border: 3px #1F2021 solid;
   float: left;
   margin: 10px;
 }
-
 .lateral{
   width: 20%;
-  /*position: absolute;
-  top: 10px;
-  left: 50px;*/
-  border: 1px black solid;
   margin: 10px;
+  border: 3px #1F2021 solid;
   float: left;
 }
-
-
-
 body > footer {
   margin: 10px;
 	clear: left;
   width: auto;
-}
-
-
-
-.menu{
- width:16%;
- height:50%;
- float: left;
- border: 1px black solid;
- margin: 10px ;
-
-}
-
-.menu ol{
- list-style-type: none;
- margin-left:-30px;
- margin-right:20px;
-}
-.menu ol a{
- display:block;
- background:black;
- margin-bottom:5px;
- padding:10px ;
- border-radius:50px;
- text-decoration:none;
- color:white;
- font:16px Verdana;
-}
-
-.menu ol a:hover{
- background:gray;
 }
